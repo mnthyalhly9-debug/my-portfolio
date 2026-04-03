@@ -10,7 +10,9 @@
         .btn { background: #25d366; color: white; padding: 15px 30px; text-decoration: none; border-radius: 50px; display: inline-block; font-weight: bold; margin-top: 20px; }
         .container { max-width: 900px; margin: auto; padding: 20px; }
         .project-card { background: white; margin-bottom: 30px; border-radius: 15px; overflow: hidden; box-shadow: 0 5px 15px rgba(0,0,0,0.1); padding: 20px; }
-        iframe { width: 100%; height: 500px; border-radius: 10px; border: none; }
+        /* تصميم المشغل ليناسب فيديوهات الطول (Shorts) */
+        .video-container { position: relative; padding-bottom: 177.77%; height: 0; overflow: hidden; border-radius: 10px; }
+        .video-container iframe { position: absolute; top: 0; left: 0; width: 100%; height: 100%; border: none; }
         h2 { margin-top: 40px; color: #333; }
     </style>
 </head>
@@ -18,23 +20,27 @@
 
     <header>
         <h1>Welcome to My Portfolio 🌟</h1>
-        <p>Hi, I'm Dalal. Professional Digital Solutions.</p>
-        <a href="https://wa.me/213673824053" class="btn">Order Your Project ($150)</a>
+        <p>Expert Digital Content & Social Media Strategies</p>
+        <a href="https://wa.me/213673824053" class="btn">Order Your Project Now</a>
     </header>
 
     <div class="container">
         <h2>My Featured Projects 🎨</h2>
 
         <div class="project-card">
-            <iframe src="https://www.youtube.com/embed/HOrD6dwEhlk" allowfullscreen></iframe>
-            <h3>Social Media Video Project 01</h3>
-            <p>High-quality video content for digital marketing.</p>
+            <div class="video-container">
+                <iframe src="https://www.youtube.com/embed/HOrD6dwEhlk" allowfullscreen></iframe>
+            </div>
+            <h3>Social Media Strategy Project 01</h3>
+            <p>Engagement-focused video content for modern brands.</p>
         </div>
 
         <div class="project-card">
-            <iframe src="https://www.youtube.com/embed/6S61yCcVPw" allowfullscreen></iframe>
-            <h3>Digital Strategy Project 02</h3>
-            <p>Creative solutions for international clients.</p>
+            <div class="video-container">
+                <iframe src="https://www.youtube.com/embed/6S61yCcVPw" allowfullscreen></iframe>
+            </div>
+            <h3>Digital Content Creation Project 02</h3>
+            <p>Creative visual storytelling for global clients.</p>
         </div>
     </div>
 
